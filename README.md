@@ -1,20 +1,20 @@
-###What is this?
+### What is this?
 
 This is a slight reorganization of the original [Nord JetBrains](https://github.com/arcticicestudio/nord-jetbrains) plugin, updated, modified and extended to suit my personal use case.  
 You could treat it as a collection of things I use in my day-to-day work, that should still be usable if you're not me.
 
-###Contains:
+### Contains:
 - Oceanic Next Nord-ified color scheme
 - Nord Darker theme with adjusted colors of panels to be a little darker
 - ...and some original Nord theme(s)
 
-###Author's ramblings
+### Author's ramblings
 
 - Currently focused on getting this into JetBrains plugin marketplace. We'll see how things go. 
 - I might try to sneak in some keybindings I use. XWin ones. On Windows. Adventure awaits.
 - I'll be trying to maintain it as new things appear, but since this is just a couple of text files, it shouldn't be hard... Right?
 
-###Notices, notices...
+### Notices, notices...
 
 Based on original work by, and forked from https://github.com/arcticicestudio/nord-jetbrains
 
