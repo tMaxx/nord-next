@@ -4,16 +4,25 @@
     <property name="created">2021-04-16T13:51:29</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2021.1.0.0</property>
-    <property name="modified">2021-04-16T19:14:53</property>
+    <property name="modified">2021-08-02T20:45:08</property>
     <property name="originalScheme">Oceanic Next</property>
   </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
+  <font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </font>
+  <font>
+    <option name="EDITOR_FONT_NAME" value="Consolas" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </font>
+  <option name="EDITOR_LIGATURES" value="true" />
   <option name="CONSOLE_FONT_NAME" value="Consolas" />
-  <option name="CONSOLE_LINE_SPACING" value="1.0" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="273327" />
     <option name="CARET_COLOR" value="65737e" />
     <option name="CARET_ROW_COLOR" value="262b35" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="1b2b34" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="323846" />
     <option name="DELETED_LINES_COLOR" value="353a41" />
     <option name="GUTTER_BACKGROUND" value="2a2f3b" />
     <option name="INDENT_GUIDE" value="273236" />
@@ -24,7 +33,7 @@
     <option name="RIGHT_MARGIN_COLOR" value="343d46" />
     <option name="SELECTED_INDENT_GUIDE" value="65737e" />
     <option name="SELECTED_TEARLINE_COLOR" value="4f5b66" />
-    <option name="SELECTION_BACKGROUND" value="4f5b66" />
+    <option name="SELECTION_BACKGROUND" value="485066" />
     <option name="SOFT_WRAP_SIGN_COLOR" value="5fb3b3" />
     <option name="TEARLINE_COLOR" value="343d46" />
     <option name="WHITESPACES" value="65737e" />
@@ -430,7 +439,6 @@
       <value>
         <option name="FOREGROUND" value="6699cc" />
         <option name="EFFECT_COLOR" value="6699cc" />
-        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="CUSTOM_KEYWORD1_ATTRIBUTES">
@@ -446,8 +454,7 @@
     </option>
     <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="71d7d7" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FOREGROUND" value="6699cc" />
       </value>
     </option>
     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
@@ -929,18 +936,21 @@
         <option name="FOREGROUND" value="c594c5" />
       </value>
     </option>
+    <option name="HOCON_SUBSTITUTION_SIGN" baseAttributes="DEFAULT_OPERATION_SIGN" />
     <option name="HTL_GLOBAL_OBJECT">
       <value>
         <option name="FOREGROUND" value="cdd3de" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="HTL_JAVA_USE" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="HTL_OPTION_NAME">
       <value>
         <option name="FOREGROUND" value="cdd3de" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="HTL_PROPERTY_ACCESS" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="HTML_ATTRIBUTE_NAME">
       <value>
         <option name="FOREGROUND" value="bb80b3" />
@@ -1693,7 +1703,6 @@
         <option name="FOREGROUND" value="99c794" />
       </value>
     </option>
-    <option name="PY.BUILTIN_NAME" baseAttributes="" />
     <option name="PY.DECORATOR">
       <value>
         <option name="FOREGROUND" value="6699cc" />

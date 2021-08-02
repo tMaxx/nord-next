@@ -1,12 +1,19 @@
 <idea-plugin>
   <id>pl.nmaxx.intellij.nord-next</id>
   <name>Nord Next</name>
-  <vendor email="nord@nmaxx.pl" url="https://nmaxx.pl">nMaxx</vendor>
+  <vendor>nMaxx</vendor>
 
   <description>
     <![CDATA[
-      An arctic, north-bluish clean and elegant JetBrains IDE UI and editor color theme.
-      Based on Nord, original work (c) by Arctic Ice Studio & affiliates
+Slight reorg of the Nord plugin, modified and extended to suit my personal use case.<br/>
+<br/>
+Contains:<br/>
+- Oceanic Next Nord-ified color scheme<br/>
+- Nord Darker theme with adjusted colors of panels to be a little darker<br/>
+<br/>
+Based on original work:<br/>
+Nord, (c) by Arctic Ice Studio & affiliates<br/>
+Oceanic Next, (c) by ???
     ]]>
   </description>
 
@@ -15,10 +22,11 @@
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider id="1324eea6-b737-4305-8a73-14af69073eae" path="/themes/nord.theme.json"/>
     <themeProvider id="1324eea6-b737-4305-8a73-14af69073abf" path="/themes/nord-darker.theme.json"/>
+
+    <bundledColorScheme id="c1ff9012-089a-4c16-ae42-baf305f6b10d" path="/colors/oceanic-nord"/>
+    <bundledColorScheme id="8a7c73ea-0fa8-4977-b661-cc303a4800e0" path="/colors/nord"/>
+
+    <!--todo keymap-->
   </extensions>
-
-  <actions>
-
-  </actions>
 
 </idea-plugin>

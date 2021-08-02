@@ -1,20 +1,29 @@
+fun prop(key: String) = project.findProperty(key).toString()
+
 plugins {
-    id("org.jetbrains.intellij") version "0.7.2"
+  id("org.jetbrains.intellij") version "1.1.4"
 }
 
-group = "pl.nmaxx.intellij"
-version = "0.1-SNAPSHOT"
+group = prop("pluginGroup")
+version = prop("pluginVersion")
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2021.1"
+  pluginName.set(prop("pluginName"))
+  version.set(prop("platformVersion"))
+  type.set(prop("platformType"))
+  downloadSources.set(prop("platformDownloadSources").toBoolean())
+  updateSinceUntilBuild.set(true)
 }
-//tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
-//    changeNotes("""
-//      Add change notes here.<br>
-//      <em>most HTML tags may be used</em>""")
-//}
+
+tasks {
+  patchPluginXml {
+    version.set(prop("pluginVersion"))
+    sinceBuild.set(prop("pluginSinceBuild"))
+    untilBuild.set(prop("pluginUntilBuild"))
+  }
+}
