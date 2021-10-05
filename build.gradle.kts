@@ -1,11 +1,18 @@
 fun prop(key: String) = project.findProperty(key).toString()
+fun groovyClosure(param: (Any, Any) -> String?) = KotlinClosure2(param)
 
 plugins {
   id("org.jetbrains.intellij") version "1.1.4"
+  id("pl.allegro.tech.build.axion-release") version "1.13.3"
+}
+
+scmVersion {
+  tag.initialVersion = groovyClosure { _, _ -> "0.1.4" }
+  snapshotCreator = groovyClosure { _, _ -> "" }
 }
 
 group = prop("pluginGroup")
-version = prop("pluginVersion")
+version = scmVersion.version
 
 repositories {
   mavenCentral()
@@ -22,7 +29,7 @@ intellij {
 
 tasks {
   patchPluginXml {
-    version.set(prop("pluginVersion"))
+    version.set(scmVersion.version)
     sinceBuild.set(prop("pluginSinceBuild"))
     untilBuild.set(prop("pluginUntilBuild"))
   }
