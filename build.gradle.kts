@@ -34,7 +34,10 @@ tasks {
 //  }
 
   publishPlugin {
-    channels.set(listOf("beta"))
+    System.getenv("JB_PLUGINS_CHANNEL")
+      .let { if (it.isNullOrBlank()) "beta" else it }
+      .let { channels.set(listOf(it)) }
+
     token.set(System.getenv("JB_PLUGINS_PUBLISH_TOKEN"))
   }
 }
