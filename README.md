@@ -4,7 +4,10 @@ This is a slight reorganization of the original [Nord JetBrains](https://github.
 
 You could treat it as a collection of things I use in my day-to-day work, that should still be usable if you're not me.
 
+**It is not aimed to be compatible or in sync with the original Nord**, but we'll see how things go.
+
 ### Contains:
+- Nord Next color scheme with slighly adjusted colors and fixed inheritances
 - Oceanic Next Nord-ified color scheme
 - Nord Darker theme with adjusted colors of panels to be a little darker
 - ...and some original Nord theme(s)
@@ -13,7 +16,6 @@ You might want to use [Atom Material Icons](https://plugins.jetbrains.com/plugin
 
 ### Author's ramblings
 
-- Currently focused on getting this into JetBrains plugin marketplace. We'll see how things go.
 - I might try to sneak in some keybindings I use. XWin ones. On Windows. Adventure awaits.
 - I'll be trying to maintain it as new things appear, but since this is just a couple of text files, it shouldn't be hard... Right?
 - Idea of `Darker` themes shamelessly stolen from that one awesome Material UI theme that stopped being awesome when it became paid. I really liked the Oceanic variant, but Nord is better, because it's free.

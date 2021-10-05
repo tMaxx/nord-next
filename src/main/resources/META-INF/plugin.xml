@@ -8,6 +8,7 @@
 Slight reorg of the Nord plugin, modified and extended to suit my personal use case.<br/>
 <br/>
 Contains:<br/>
+- Nord Next color scheme with slighly adjusted colors and fixed inheritances<br/>
 - Oceanic Next Nord-ified color scheme<br/>
 - Nord Darker theme with adjusted colors of panels to be a little darker<br/>
 <br/>
@@ -25,6 +26,7 @@ Oceanic Next, (c) by ???
 
     <bundledColorScheme id="c1ff9012-089a-4c16-ae42-baf305f6b10d" path="/colors/oceanic-nord"/>
     <bundledColorScheme id="8a7c73ea-0fa8-4977-b661-cc303a4800e0" path="/colors/nord"/>
+    <bundledColorScheme id="8a7c73ea-1fa8-4977-b661-cc313a4811e1" path="/colors/nord-next"/>
 
     <!--todo keymap-->
   </extensions>
