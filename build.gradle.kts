@@ -26,4 +26,15 @@ tasks {
     sinceBuild.set(prop("pluginSinceBuild"))
     untilBuild.set(prop("pluginUntilBuild"))
   }
+
+//  signPlugin {
+//    certificateChain.set(System.getenv("JB_CERTIFICATE_CHAIN"))
+//    privateKey.set(System.getenv("JB_PRIVATE_KEY"))
+//    password.set(System.getenv("JB_PRIVATE_KEY_PASSWORD"))
+//  }
+
+  publishPlugin {
+    channels.set(listOf("beta"))
+    token.set(System.getenv("JB_PLUGINS_PUBLISH_TOKEN"))
+  }
 }

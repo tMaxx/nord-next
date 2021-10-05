@@ -26,13 +26,18 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Build plugin with Gradle
+    - name: Build plugin
       run: gradle buildPlugin
+
+    - name: Publish plugin to JB Plugins
+      run: gradle publishPlugin
+      env:
+        JB_PLUGINS_PUBLISH_TOKEN: ${{ secrets.JB_PLUGINS_PUBLISH_TOKEN }}
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
-    - name: Publish to GitHub Packages
-      run: gradle publish
-      env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Publish to GitHub Packages
+#      run: gradle publish
+#      env:
+#        USERNAME: ${{ github.actor }}
+#        TOKEN: ${{ secrets.GITHUB_TOKEN }}
