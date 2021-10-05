@@ -5,8 +5,9 @@ name: Build and publish plugin
 
 on:
   workflow_dispatch:
-  release:
-    types: [created]
+# fixme relase and push in one step, can't leave as-is, as it'll break GH actions execution due to versions mismatch
+#  release:
+#    types: [created]
 
 jobs:
   build:
