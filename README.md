@@ -7,7 +7,7 @@ You could treat it as a collection of things I use in my day-to-day work, that s
 **It is not aimed to be compatible or in sync with the original Nord**, but we'll see how things go.
 
 ### Contains:
-- Nord Next color scheme with slighly adjusted colors and fixed inheritances
+- Nord Next color scheme with fixed inheritances and colors adjusted towards less eye-strain
 - Oceanic Next Nord-ified color scheme
 - Nord Darker theme with adjusted colors of panels to be a little darker
 - ...and some original Nord theme(s)
