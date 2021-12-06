@@ -9,6 +9,7 @@ plugins {
 scmVersion {
   tag.initialVersion = groovyClosure { _, _ -> "0.1.4" }
   snapshotCreator = groovyClosure { _, _ -> "" }
+  useHighestVersion = true
 }
 
 group = prop("pluginGroup")
