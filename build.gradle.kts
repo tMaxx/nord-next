@@ -14,7 +14,6 @@ scmVersion {
 
 group = prop("pluginGroup")
 version = scmVersion.version
-project.version = scmVersion.version
 
 repositories {
   mavenCentral()
@@ -31,7 +30,7 @@ intellij {
 
 tasks {
   patchPluginXml {
-    //version.set(scmVersion.version)
+    version.set(scmVersion.version)
     sinceBuild.set(prop("pluginSinceBuild"))
     untilBuild.set(prop("pluginUntilBuild"))
   }
