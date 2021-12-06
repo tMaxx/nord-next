@@ -7,13 +7,14 @@ plugins {
 }
 
 scmVersion {
-  tag.initialVersion = groovyClosure { _, _ -> "0.1.4" }
+  // tag.initialVersion = groovyClosure { _, _ -> "0.1.4" }
   snapshotCreator = groovyClosure { _, _ -> "" }
   useHighestVersion = true
 }
 
 group = prop("pluginGroup")
 version = scmVersion.version
+project.version = scmVersion.version
 
 repositories {
   mavenCentral()

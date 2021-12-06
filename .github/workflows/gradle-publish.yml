@@ -28,10 +28,10 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build plugin
-      run: gradle buildPlugin
+      run: ./gradlew buildPlugin
 
     - name: Publish plugin to JB Plugins
-      run: gradle publishPlugin
+      run: ./gradlew currentVersion publishPlugin
       env:
         JB_PLUGINS_PUBLISH_TOKEN: ${{ secrets.JB_PLUGINS_PUBLISH_TOKEN }}
         # todo plugin signing
