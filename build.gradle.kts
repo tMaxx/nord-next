@@ -46,7 +46,7 @@ tasks {
       .let { if (it.isNullOrBlank()) "beta" else it }
       .let { channels.set(listOf(it)) }
 
-    println("publishing version ${scmVersion.version} :: project set version is $version :: snapshot/next version is ${scmVersion.nextVersion}")
+    println("publishing version ${scmVersion.version} :: project set version is $version")
 
     token.set(System.getenv("JB_PLUGINS_PUBLISH_TOKEN"))
   }

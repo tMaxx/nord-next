@@ -1,4 +1,4 @@
-name: Tag next plugin version
+name: Release next plugin version
 
 on:
   workflow_dispatch:
@@ -27,4 +27,4 @@ jobs:
       run: chmod +x gradlew
 
     - name: Mark next version
-      run: ./gradlew markNextVersion
+      run: ./gradlew release --no-daemon
