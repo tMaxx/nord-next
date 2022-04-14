@@ -30,7 +30,7 @@ intellij {
 
 tasks {
   patchPluginXml {
-    version.set(scmVersion.previousVersion)
+    version.set(scmVersion.version)
     sinceBuild.set(prop("pluginSinceBuild"))
     untilBuild.set(prop("pluginUntilBuild"))
   }
@@ -46,7 +46,7 @@ tasks {
       .let { if (it.isNullOrBlank()) "beta" else it }
       .let { channels.set(listOf(it)) }
 
-    println("publishing version ${scmVersion.previousVersion} :: snapshot version is $version")
+    println("publishing version ${scmVersion.version} :: project set version is $version :: snapshot/next version is ${scmVersion.nextVersion}")
 
     token.set(System.getenv("JB_PLUGINS_PUBLISH_TOKEN"))
   }
