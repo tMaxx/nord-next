@@ -23,8 +23,5 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
 
-    - name: Make executable
-      run: chmod +x gradlew
-
     - name: Mark next version
       run: ./gradlew release --no-daemon
