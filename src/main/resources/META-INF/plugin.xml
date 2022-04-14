@@ -28,7 +28,7 @@ Oceanic Next, (c) by ???
     <bundledColorScheme id="8a7c73ea-0fa8-4977-b661-cc303a4800e0" path="/colors/nord"/>
     <bundledColorScheme id="8a7c73ea-1fa8-4977-b661-cc313a4811e1" path="/colors/nord-next"/>
 
-    <!--todo keymap-->
+    <!--todo keymap?-->
   </extensions>
 
 </idea-plugin>
