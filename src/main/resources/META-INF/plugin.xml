@@ -1,16 +1,16 @@
 <idea-plugin>
-  <id>pl.nmaxx.intellij.nord-next</id>
-  <name>Nord Next</name>
+  <id>pl.nmaxx.intellij.nordish-next</id>
+  <name>Nordish Next</name>
   <vendor>nMaxx</vendor>
 
   <description>
     <![CDATA[
-Slight reorg of the Nord plugin, modified and extended to suit my personal use case.<br/>
+Variation of Nord theme, modified to suit my personal use case.<br/>
 <br/>
 Contains:<br/>
-- Nord Next color scheme with fixed inheritances and colors adjusted towards less eye-strain<br/>
-- Oceanic Next Nord-ified color scheme<br/>
-- Nord Darker theme with adjusted colors of panels to be a little darker<br/>
+- Nordish Next color scheme with fixed inheritances and colors adjusted towards less eye-strain<br/>
+- Oceanic Next Nordified color scheme<br/>
+- Nordish Darker theme with colors of panels adjusted to be a little darker<br/>
 <br/>
 Based on original work:<br/>
 Nord, (c) by Arctic Ice Studio & affiliates<br/>
@@ -21,12 +21,12 @@ Oceanic Next, (c) by ???
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="1324eea6-b737-4305-8a73-14af69073eae" path="/themes/nord.theme.json"/>
-    <themeProvider id="1324eea6-b737-4305-8a73-14af69073abf" path="/themes/nord-darker.theme.json"/>
+    <!-- <themeProvider id="1324eea6-b737-4305-8a73-14af69073eae" path="/themes/nord.theme.json"/> -->
+    <themeProvider id="1324eea6-b737-4305-8a73-14af69073abf" path="/themes/nordish-darker.theme.json"/>
 
-    <bundledColorScheme id="c1ff9012-089a-4c16-ae42-baf305f6b10d" path="/colors/oceanic-nord"/>
-    <bundledColorScheme id="8a7c73ea-0fa8-4977-b661-cc303a4800e0" path="/colors/nord"/>
-    <bundledColorScheme id="8a7c73ea-1fa8-4977-b661-cc313a4811e1" path="/colors/nord-next"/>
+    <bundledColorScheme id="c1ff9012-089a-4c16-ae42-baf305f6b10d" path="/colors/oceanic-nordified"/>
+    <!-- <bundledColorScheme id="8a7c73ea-0fa8-4977-b661-cc303a4800e0" path="/colors/nord"/> -->
+    <bundledColorScheme id="8a7c73ea-1fa8-4977-b661-cc313a4811e1" path="/colors/nordish-next"/>
 
     <!--todo keymap?-->
   </extensions>
